@@ -1,0 +1,11 @@
+
+<img  (dblclick)="onStarDBLClick()" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg" height="42" width="42"> <!--red star image-->
+<h2 [hidden]="show">Look at the star</h2> <!--When star is double clicked the text disappears-->
+<br>
+<button (click)="onButtonClick()">Press me</button> <!--Adding button with the the text "press me" -->
+<br>
+
+<h3>The number of times the button has been pressed is: {{count}} </h3> <!-- uses a count to identify how many time the button has been clicked-->
+
+<br>
+<app-list></app-list>
