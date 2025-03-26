@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Shrek App <!-- header title for the app -->
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- movie list (commented out) -->
+  <!-- <ul>
+    <li *ngFor="let x of myMovies">
+      {{x.Title}}, {{x.Year}}
+      <img [src]="x.Poster" alt="movie poster">
+    </li>
+  </ul> -->
+
+  <!-- display movie details in cards -->
+  <ion-card *ngFor="let movie of myMovies">
+    <img src={{movie.Poster}}/> <!-- movie poster image -->
+    <ion-card-header>
+      <ion-card-title>{{movie.Title}}</ion-card-title> <!-- movie title -->
+      <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle> <!-- movie year -->
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less. <!-- placeholder text -->
+    </ion-card-content>
+  </ion-card>
+</ion-content>
